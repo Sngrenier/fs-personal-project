@@ -11,16 +11,21 @@ export const AuthProvider = (props) => {
         const profile_pic = `https://robohash.org/${username}.png`
         axios.post('/api/auth/register', {username, password, profile_pic}).then(res => {
             setUser(res.data)
-            push('/')
+            push('/profile')
         }).catch(error => setErrorMsg('Username Taken!'))
     }
 
     const login = (username, password, setErrorMsg) => {
         axios.post('/api/auth/login', {username, password}).then(res => {
             setUser(res.data)
-            push('/')
+            push('/profile')
         }).catch(error => setErrorMsg('Please register to log in.'))
     }
+    
+    // const logout = () => {
+    //         push('/')
+    //     }
+    
 
     return(
         <AuthContext.Provider

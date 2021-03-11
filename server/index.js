@@ -37,6 +37,8 @@ app.get('/api/auth/me', userCtrl.getUser);
 app.post('/api/auth/logout', userCtrl.logout);
 
 //Search Endpoints
+// app.get(`/api/storeProducts`, ctrl.getProducts)
+// app.get(`/api/storeProducts/:search`, ctrl.postSearch)
 
 
 

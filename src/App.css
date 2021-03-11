@@ -199,3 +199,28 @@ h3 {
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.input-btn {
+  border-top-style: solid;
+  border-top-color: #979696;
+  border-right: transparent;
+  border-left: transparent;
+  border-top: transparent;
+  line-height: 6rem !important;
+  margin: 10px;
+  width: 500px !important;
+  padding-bottom: 2%;
+}
+.prof-img {
+  margin-left: -200%;
+  border-radius: 25%;
+  margin-top: 20%;
+  padding-top: 5%;
+}

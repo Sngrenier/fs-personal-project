@@ -15,12 +15,12 @@ export default class LowerLanding extends Component {
                         <img className= "l-img1" alt="img-1" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M2_Hero?wid=1125&fmt=jpeg&qlt=85"></img>
                         </div>
                         <div className="landing-img2 text-center">
-                        <img className="l-img2" alt="img-2" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M2_Alt?wid=672&fmt=jpeg&qlt=85" width={500}></img>
+                        <img className="l-img2" alt="img-2" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M2_Alt?wid=672&fmt=jpeg&qlt=85"></img>
                             <p className="landing-img-text-1">ASPEN</p>
                             <p className="landing-img-text-2">A GEM OF THE ROCKIES SET BY THE ROARING FORK RIVER AMID SOARING, SNOW-CAPPED PEAKS. AN ICONIC RETREAT, RENOWNED FOR SKIING AND CHIC APRÈS. RICH IN HISTORY AND A MECCA FOR MUSIC, FROM THE SILVER BOOM TO SYMPHONIES OF STRAVINSKY. ASPEN IS RELAXED MOUNTAIN LIVING</p>
                             <Link to="/productList">
                                     <ButtonContainer>
-                                        EXPLORE VAIL
+                                        EXPLORE CHAIRS
                                     </ButtonContainer>
                                 </Link>
                         </div>
@@ -32,15 +32,15 @@ export default class LowerLanding extends Component {
             <div className="container-fluid py-5 lower-landing">
                 <div className="first-set">
                         <div className="landing-img1">
-                        <img className= "l-img1" alt="img-1" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M8_Hero?wid=1125&fmt=jpeg&qlt=85"></img>
+                        <img className= "l-img1" alt="img-1" src="https://fabric.imgix.net/02.25.21+Pink+Intelligence+HP/HP_PinkIntelligence_Feature_1.jpg?w=510&auto=format"></img>
                         </div>
                         <div className="landing-img2 text-center">
-                        <img className="l-img2" alt="img-2" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M8_Alt?wid=672&fmt=jpeg&qlt=85" width={500}></img>
-                            <p className="landing-img-text-1">VAIL</p>
-                            <p className="landing-img-text-2">PINE FORESTS AND CRAGGY PEAKS BLANKETED IN WHITE. A MASSIVE MOUNTAIN WITH EPIC TRAILS AND EXHILARATING CHUTES. THE VILLAGE OF VAIL SITS BELOW – A CULTURED BASE CAMP FOR ADVENTURE. IN THE GRANDEUR OF THE ROCKIES, A DESTINATION INSPIRED BY THE BAVARIAN ALPS.</p>
+                        <img className="l-img2" alt="img-2" src="https://abchome-xpm-images.s3.amazonaws.com/CLP+Images/Dining+CLP/010721+Dining+CLP/DiningCLP_Feature_4.jpg?w=510&auto=format"></img>
+                            <p className="landing-img-text-1">TIBET</p>
+                            <p className="landing-img-text-2">TIBET DEVLOPED A BEAUTIFUL AND UNIQUE CULTURE DUE TO ITS GEOGRAPHIC AND CLIMATE CONDITIONS. WHILE INFLUENCED BY NEIGHBORING CULTURES CHINA, INDIA, AND NEPAL, THE HIMALAYAN REGION'S REMOTENESS HAS PRESERVED AND STIMULATED THE DEVELOPMENT OF ITS DISTINCT CULTURE.</p>
                             <Link to="/productList">
                                     <ButtonContainer>
-                                        EXPLORE VAIL
+                                        EXPLORE SOFAS
                                     </ButtonContainer>
                                 </Link>
                         </div>
@@ -55,12 +55,12 @@ export default class LowerLanding extends Component {
                         <img className= "l-img1" alt="img-1" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M3_Hero?wid=1125&fmt=jpeg&qlt=85"></img>
                         </div>
                         <div className="landing-img2 text-center">
-                        <img className="l-img2" alt="img-2" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M3_Alt?wid=672&fmt=jpeg&qlt=85" width={500}></img>
+                        <img className="l-img2" alt="img-2" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M3_Alt?wid=672&fmt=jpeg&qlt=85"></img>
                             <p className="landing-img-text-1">TAOS</p>
                             <p className="landing-img-text-2">CANYON, MESA, SUMMIT. FROM THE RIO GRANDE GORGE TO THE SANGRE DE CRISTO MOUNTAINS, THE ANCIENT PUEBLO TO THE MODERN PLAZA. PAST ARROYO SECO, WHEELER PEAK’S TOWERING VERTICAL OFFERS TRANSCENDENT RUNS. COPPER MINING TO ART COLONY, THE TRUE SOUL OF THE SOUTHWEST.</p>
                             <Link to="/productList">
                                     <ButtonContainer>
-                                        EXPLORE TAOS
+                                        EXPLORE FINISHINGS
                                     </ButtonContainer>
                                 </Link>
                         </div>

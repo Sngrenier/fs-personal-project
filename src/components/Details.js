@@ -5,6 +5,7 @@ import {ButtonContainer} from './NavButton'
 
 export default class Details extends Component {
     render() {
+
         return (
             <ProductConsumer>
                 {(value) => {
@@ -17,7 +18,7 @@ export default class Details extends Component {
                             <img src={img} className="img-fluid" alt="product"/>
                             </div>
                             <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                <h3>model: {title}</h3>
+                                <h3> {title}</h3>
                                 <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
                                     made by : <span className="text-uppercase">{company}</span>
                                 </h4>
@@ -28,7 +29,7 @@ export default class Details extends Component {
                                     </strong>
                                 </h4>
                                 <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                                    some info about the product:
+                                    craftmanship details:
                                 </p>
                                 <p className="text-muted lead">{info}</p>
                                 <div>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css'
+// import {ProductConsumer} from '../../context/context'
+// import {Context} from '../../context/context'
 
 // import styled from 'styled-components'
 
@@ -8,16 +10,27 @@ import './Navbar.css'
 
 
 export default class Navbar extends Component {
-    constructor() {
-            super()
+    constructor(props) {
+            super(props)
             this.state = {
+                // products: [],
+                // userInput: ''
             // toggleShow: false
         }
     
     }
 
     
-
+ // filterProducts = this.state.products.filter( item => {
+    //     return this.state.product.name.toLowerCase().includes( this.state.userInput.toLowerCase())
+    // })
+  
+    filteredProducts = (item) => {
+        const product = this.state.products.filter(item => {
+            return this.state.product.name.toLowerCase().includes(this.state.userInput.toLowerCase())
+        }) 
+        return product
+    } 
     // toggleShowFunc = () => {
     //     this.setState( (prevState) => {
     //         return {
@@ -26,17 +39,18 @@ export default class Navbar extends Component {
     //     })
     // }
 
-    handleSearch = () => {
-        this.props.handleSearch(this.state.userInput)
-    }
+    // handleSearch = () => {
+    //     this.props.handleSearch(this.state.userInput)
+    // }
 
-    handleClear = () => {
-        this.setState({userInput: ''})
-        this.props.handleSearch('')
-    }
+    // handleClear = () => {
+    //     this.setState({userInput: ''})
+    //     this.props.handleSearch('')
+    // }
 
-
+    
     render(){
+        // const values=useContext(AuthContext)
         return(
             // <section className="navbar">
             // <div className="navbar-expand-sm px-sm-5">
@@ -49,19 +63,19 @@ export default class Navbar extends Component {
                 </Link>
                 </div>
 
-                <div className="nav-item search-container">
+                {/* <div className="nav-item search-container">
                     <li className="nav-item ml-5 nav-item">
                     <input className="input-btn"
                 value={this.props.userInput}
                 placeholder = {`Search`}
-                onChange={(e) => this.props.handleChange(e)}
+                onChange={(e) => this.props.filteredProducts(e)}
                 />
-                <div className="search-buttons">
+               <div className="search-buttons">
                     <button className="clear-btn" onClick={this.props.postSearch}>Search</button> 
-                    <button className="clear-btn" onClick={this.props.getCollection}>View All</button>
+                    <button className="clear-btn" onClick={this.props.getTempProducts}>View All</button>
                 </div>
                     </li>
-                </div>
+                </div> */}
                 
                 <div className="nav-item brand-name">
                 <li className="nav-item ml-5">
@@ -80,8 +94,10 @@ export default class Navbar extends Component {
                 <div className="nav-item greeting">
                 <li className="nav-item ml-5">
                     <p className="nav-hello">Welcome!</p>
+                    {/* <p className="nav-hello">`Welcome! ${username}`</p> */}
                     <Link to="/auth" className="ml-auto">
                     <button className="nav-login">LOGIN OR REGISTER</button>
+                    <button className="nav-login">LOGOUT</button>
                     </Link>
                 </li>
                 </div>

@@ -42,8 +42,7 @@ export default class ImageSlide extends Component {
                     <Link to="/productList" className="carousel-link">
                     <img 
                     className="img-slider carousel-link" 
-                    src="https://media.restorationhardware.com/is/image/rhis/021221_Ski_H1_S2?wid=2000&fmt=jpeg&qlt=80" 
-                    sizes="(max-width:320px)280px, (max-width:480px)440px, 800px"
+                    src="https://i.pinimg.com/originals/41/c7/de/41c7de520b6d1636c447ce2db6f112b4.jpg" 
                     alt="img" />
                     <div class="carousel-caption">
                         <h5>caption</h5>
@@ -57,7 +56,7 @@ export default class ImageSlide extends Component {
                     {/* <h3>Shop Winter Throws</h3> */}
                     <img 
                     className="img-slider" 
-                    src="https://media.restorationhardware.com/is/image/rhis/021221_Ski_H1_S5?wid=2000&fmt=jpeg&qlt=80" 
+                    src="https://secure.img1-fg.wfcdn.com/im/04516976/c_crop-h625-w1600%5Ecompr-r85/9333/93336818/default_name.jpg" 
                     alt="img" />
                     <div class="carousel-caption">
                         <h5>caption</h5>
@@ -71,7 +70,7 @@ export default class ImageSlide extends Component {
                     {/* <h3>Join the Club</h3> */}
                     <img 
                     className="img-slider" 
-                    src="https://media.restorationhardware.com/is/image/rhis/021221_Ski_H1_S6?wid=2000&fmt=jpeg&qlt=80" 
+                    src="https://media.architecturaldigest.com/photos/5852dba1001c874267ed3d3d/16:9/w_2560%2Cc_limit/Aspen-Home_04.jpg" 
                     alt="img" />
                     <div class="carousel-caption">
                         <h5>caption</h5>
@@ -86,3 +85,8 @@ export default class ImageSlide extends Component {
     }
 }
 
+
+
+// OTHER PHOTO SRC OPTIONS:
+// https://d31dpzy4bseog7.cloudfront.net/media/2019/12/04130623/Conrad_Architects_Daracombe_Kew_07.jpg
+// https://2lin3i1bbign2l2t392v1pxd-wpengine.netdna-ssl.com/wp-content/uploads/bfi_thumb/Dimension-Fine-Homes-Susse-Budde-Minyard-Living-Fall-View-Web-np07jj8e1cwlc4zsq9qua9k0wdant1u17ff2eag31s.jpg

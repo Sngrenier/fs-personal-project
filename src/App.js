@@ -13,6 +13,7 @@ import Modal from './components/Modal'
 import Landing from './components/Landing/Landing'
 import ProdHead from './components/ProdHead'
 import Auth from './components/Auth/newAuth'
+import Profile from './components/Profile/Profile'
 // import ImageSlide from './components/ImageSlide'
 
 
@@ -28,6 +29,7 @@ class App extends Component {
         <Route exact path="/" component={Landing} />
         <Route path="/productList" component={ProductList} />
         <Route path="/auth" component={Auth} />
+        <Route path="/profile" component={Profile} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
         <Route component={Default} />

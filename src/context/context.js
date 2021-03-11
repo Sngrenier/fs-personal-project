@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {storeProducts, detailProduct} from '../data'
 
+// import axios from 'axios'
+
 
 const ProductContext = React.createContext()
 //Provider
@@ -9,6 +11,8 @@ const ProductContext = React.createContext()
 class ProductProvider extends Component {
     state = {
         products: [], 
+        sortedProducts: [],
+        category: 'all',
         detailProduct: detailProduct,
         cart: [],
         userInput: '',
@@ -38,10 +42,55 @@ class ProductProvider extends Component {
         })
     }
 
+
     getItem = (id) => {
         const product = this.state.products.find(item => item.id === id)
         return product
     }
+
+    handleChange = event => {
+        const target = event.target
+        const value= event.type ==='checkbox'? target.checked : target.value
+        const title = event.target.title
+        this.setState({
+            [title]: value
+        }, this.filterProducts)
+    }
+
+    filterProducts = () => {
+        let {products, category} = this.state
+        let tempProducts = [...products]
+        if(category !== 'all'){
+            tempProducts = tempProducts.filter(product => product.category === category)
+        }
+        this.setState({
+            sortedProducts: tempProducts
+        })
+    }
+
+    // postSearch = () => {
+    //     axios.get(`/api/products/${this.state.userInput}`)
+    //     .then(res => {
+    //       console.log(res.data)
+    //       this.setState({
+    //         products: res.data,
+    //         userInput: ''
+    //       })
+    //       console.log(this.state.userInput)
+    //     }).catch(err => console.log(err))
+    //   }
+
+    // filterProducts = this.state.products.filter( item => {
+    //     return this.state.product.name.toLowerCase().includes( this.state.userInput.toLowerCase())
+    // })
+  
+    // filteredProducts = (item) => {
+    //     const product = this.state.products.filter(item => {
+    //         return this.state.product.name.toLowerCase().includes(this.state.userInput.toLowerCase())
+    //     }) 
+    //     return product
+    // } 
+
 
 
     handleDetail = (id) =>{
@@ -191,8 +240,10 @@ class ProductProvider extends Component {
                 decrement: this.decrement,
                 removeItem: this.removeItem,
                 clearCart: this.clearCart,
-                handleSearch: this.handleSearch,
-                handleChange:this.handleChange
+                // handleSearch: this.handleSearch,
+                // handleChange:this.handleChange,
+                // filteredProducts:this.filteredProducts
+                handleChange: this.handleChange
             }}>
                 {this.props.children}
             </ProductContext.Provider>
@@ -202,6 +253,14 @@ class ProductProvider extends Component {
 
 const ProductConsumer = ProductContext.Consumer
 
-export { ProductProvider, ProductConsumer }
+export function withProductConsumer(Component){
+    return function ProductWrapper(props){
+        return <ProductConsumer>
+           {value => <Component{...props} context = {value}/>} 
+        </ProductConsumer>
+    }
+}
 
+export { ProductProvider, ProductConsumer, ProductContext }
+//need to make a ProductConsumer and then add it to my export in order to handle search functions
 

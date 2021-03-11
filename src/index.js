@@ -6,22 +6,20 @@ import App from './App'
 import {BrowserRouter as Router} from 'react-router-dom'
 import {ProductProvider} from './context/context'
 import {AuthProvider} from './context/newAuthContext'
-import {Provider} from 'react-redux'
-import store from './redux/store'
+// import {GreetingProvider} from './context/userContext'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-      <Provider store={store}>
-    <ProductProvider>
     <Router>
+      {/* <GreetingProvider> */}
+    <ProductProvider>
     <AuthProvider>
     <App />
     </AuthProvider>
-    </Router>
     </ProductProvider>
-    </Provider>
-
+    {/* </GreetingProvider> */}
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
