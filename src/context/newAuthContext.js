@@ -22,14 +22,18 @@ export const AuthProvider = (props) => {
         }).catch(error => setErrorMsg('Please register to log in.'))
     }
     
-    // const logout = () => {
-    //         push('/')
-    //     }
+    const logout = () => {
+        axios.post('/api/auth/logout')
+        .then(_ =>{
+                push('/')
+        })
+    }
+       
     
 
     return(
         <AuthContext.Provider
-        value={{user, setUser, register, login}}
+        value={{user, setUser, register, login, logout}}
         >
             {props.children}
         </AuthContext.Provider>

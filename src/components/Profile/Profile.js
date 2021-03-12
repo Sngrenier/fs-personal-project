@@ -1,14 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Title from '../Title'
 import {Link} from 'react-router-dom'
 import {ButtonContainer} from '../NavButton'
-import {AuthProvider} from '../../context/newAuthContext'
+import {useContext} from 'react'
+import {AuthContext} from '../../context/newAuthContext'
+
+// import {Redirect} from 'react-router-dom'
+// import {useState} from 'react'
 
 
-export default class Profile extends Component {
-    render() {
+const Profile =()=> {
+
+    const {user} = useContext(AuthContext)
+    console.log(user)
+
         return (
-            <AuthProvider>
             <div className="py-5">
                 <div className="container">
                     <Title name="your" title="profile" />
@@ -50,9 +56,9 @@ export default class Profile extends Component {
                             </div>
                         </div>
                     </div>
-                            </AuthProvider>
 
         
         )
     }
-}
+
+export default Profile

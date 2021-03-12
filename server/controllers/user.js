@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs')
 
 module.exports = {
     register: async (req, res) => {
-        const {username, password, email, profile_pic, first_name, last_name, phone_number} = req.body
+        const {username, password, email, profile_pic, user_name, phone_number} = req.body
         console.log(req.body)
         const db = req.app.get('db')
         const result = await db.user.find_user_by_username([username])
@@ -12,9 +12,9 @@ module.exports = {
         }
         const salt = bcrypt.genSaltSync(10)
         const hash = bcrypt.hashSync(password, salt)
-        const createdUser = await db.user.create_user([ username, hash, email, profile_pic, first_name, last_name, phone_number])
+        const createdUser = await db.user.create_user([ username, hash, email, profile_pic, user_name, phone_number])
         const user = createdUser[0]
-        req.session.user = { id: user.id, username: user.username, profile_pic: user.profile_pic, email:user.email, first_name:user.first_name, last_name:user.last_name, phone_number:user.phone_number }
+        req.session.user = { id: user.user_id, username: user.username, profile_pic: user.profile_pic, email:user.email, user_name:user.user_name, phone_number:user.phone_number }
         return res.status(201).send(req.session.user)
     },
 
@@ -30,12 +30,11 @@ module.exports = {
         const isAuthenticated = bcrypt.compareSync(password, user.password)
         if(isAuthenticated){
             req.session.user = {
-                id: user.id, 
+                id: user.user_id, 
                 username: user.username, 
                 profile_pic: user.profile_pic, 
                 email:user.email,
-                first_name:user.first_name,
-                last_name:user.last_name,
+                user_name:user.user_name,
                 phone_number:user.phone_number
             }
             res.status(200).send(req.session.user)

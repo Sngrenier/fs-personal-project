@@ -1,8 +1,10 @@
 require('dotenv').config();
 const express = require('express'),
     userCtrl = require('./controllers/user'),
+    cartCtrl = require('./controllers/cart')
     massive = require('massive'),
     session = require('express-session')
+    //path = require('path')
 
 
 const app = express();
@@ -41,7 +43,34 @@ app.post('/api/auth/logout', userCtrl.logout);
 // app.get(`/api/storeProducts/:search`, ctrl.postSearch)
 
 
+//Products 
+app.get(`/api/products`, cartCtrl.getProducts)
+app.get(`/api/cart`, cartCtrl.getCart)
+app.post(`/api/addToCart`, cartCtrl.addToCart)
+app.delete(`/api/deleteItem/:item_id`, cartCtrl.deleteItem)
+app.put(`/api/increment/:item_id`, cartCtrl.increment)
+app.put(`/api/decrement/:item_id`, cartCtrl.decrement) 
+app.post(`/api/clearCart`, cartCtrl.clearCart)
+
 
 app.listen(SERVER_PORT, () => {
     console.log(`Server running on port ${SERVER_PORT}`)
 })
+
+// HOSTING:
+// Add this to the end of server index:
+//  app.use(express.static(__dirname + '../build/index.html'))
+
+//  app.get('*', (req, res)=> {
+//    res.sendFile(path.join(__dirname, '../build/index.html'))
+//  })
+
+// Just in case there are typos above, this is copied from instructor
+// app.use( express.static( `${__dirname}/../build`));
+
+// app.get('*', (req,res)=> { 
+// res.sendFile(path.join(__dirname, '../build/index.html')) 
+// })
+
+// then run npm run build in terminal (make sure you're in root)
+// then yoyu don't need npm start to run this, you only need nodemon

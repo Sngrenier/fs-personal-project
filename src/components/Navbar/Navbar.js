@@ -1,43 +1,22 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css'
-// import {ProductConsumer} from '../../context/context'
-// import {Context} from '../../context/context'
-
 // import styled from 'styled-components'
 
 
 
 
 export default class Navbar extends Component {
-    constructor(props) {
-            super(props)
-            this.state = {
-                // products: [],
-                // userInput: ''
-            // toggleShow: false
-        }
-    
-    }
-
-    
  // filterProducts = this.state.products.filter( item => {
     //     return this.state.product.name.toLowerCase().includes( this.state.userInput.toLowerCase())
     // })
   
-    filteredProducts = (item) => {
-        const product = this.state.products.filter(item => {
-            return this.state.product.name.toLowerCase().includes(this.state.userInput.toLowerCase())
-        }) 
-        return product
-    } 
-    // toggleShowFunc = () => {
-    //     this.setState( (prevState) => {
-    //         return {
-    //             toggleShow: !prevState.toggleShow
-    //         }
-    //     })
-    // }
+    // filteredProducts = (item) => {
+    //     const product = this.state.products.filter(item => {
+    //         return this.state.product.name.toLowerCase().includes(this.state.userInput.toLowerCase())
+    //     }) 
+    //     return product
+    // } 
 
     // handleSearch = () => {
     //     this.props.handleSearch(this.state.userInput)
@@ -49,11 +28,12 @@ export default class Navbar extends Component {
     // }
 
     
-    render(){
-        // const values=useContext(AuthContext)
+    render() {
+        // const{username, email, profile_pic, first_name, last_name, phone_number} = user
+
         return(
-            // <section className="navbar">
-            // <div className="navbar-expand-sm px-sm-5">
+            <section className="navbar">
+            <div className="navbar-expand-sm px-sm-5">
             <nav className="navbar-expand-sm px-sm-5 navbar container-fluid search-bar">
                 <ul className="navbar-nav align-items-center">
                 
@@ -97,6 +77,10 @@ export default class Navbar extends Component {
                     {/* <p className="nav-hello">`Welcome! ${username}`</p> */}
                     <Link to="/auth" className="ml-auto">
                     <button className="nav-login">LOGIN OR REGISTER</button>
+                    </Link>
+                    </li>
+                    <li>    
+                    <Link to="/">
                     <button className="nav-login">LOGOUT</button>
                     </Link>
                 </li>
@@ -112,7 +96,8 @@ export default class Navbar extends Component {
 
                 </ul>
                 </nav>
-               
+               </div>
+            </section>
         )
     }
 }

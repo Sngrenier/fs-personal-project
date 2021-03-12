@@ -29,6 +29,7 @@ export default class ImageSlide extends Component {
         // pagination: true,
         outerSpacing: 0,
         dynamicHeight: true,
+        showThumbs: false
         // wrap:true,
     }
 
@@ -53,7 +54,6 @@ export default class ImageSlide extends Component {
 
                 <div>
                     <Link to="/productList" className="carousel-link">
-                    {/* <h3>Shop Winter Throws</h3> */}
                     <img 
                     className="img-slider" 
                     src="https://secure.img1-fg.wfcdn.com/im/04516976/c_crop-h625-w1600%5Ecompr-r85/9333/93336818/default_name.jpg" 
@@ -67,7 +67,6 @@ export default class ImageSlide extends Component {
 
                 <div>
                     <Link to="/productList" className="carousel-link">
-                    {/* <h3>Join the Club</h3> */}
                     <img 
                     className="img-slider" 
                     src="https://media.architecturaldigest.com/photos/5852dba1001c874267ed3d3d/16:9/w_2560%2Cc_limit/Aspen-Home_04.jpg" 

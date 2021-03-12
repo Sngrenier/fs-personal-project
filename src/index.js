@@ -6,25 +6,29 @@ import App from './App'
 import {BrowserRouter as Router} from 'react-router-dom'
 import {ProductProvider} from './context/context'
 import {AuthProvider} from './context/newAuthContext'
-// import {GreetingProvider} from './context/userContext'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      {/* <GreetingProvider> */}
     <ProductProvider>
     <AuthProvider>
     <App />
     </AuthProvider>
     </ProductProvider>
-    {/* </GreetingProvider> */}
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
-);
+  );
+  
+  // If you want to start measuring performance in your app, pass a function
+  // to log results (for example: reportWebVitals(console.log))
+  // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+  reportWebVitals();
+  
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+  // import {HashRouter, BrowserRouter} from 'react-router-dom'
+  // const Router = process.env.NODE_ENV === 'development'? HashRouter : BrowserRouter
