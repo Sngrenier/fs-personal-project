@@ -1,10 +1,7 @@
 import {useState, useContext} from 'react'
 import {Link} from 'react-router-dom'
-// import axios from 'axios'
 import './Auth.css'
 import {AuthContext} from '../../context/newAuthContext'
-// import {connect} from 'react-redux'
-// import {updateUser} from './../../redux/reducer'
 
 const Auth = () => {
     const [username, setUsername] = useState('')

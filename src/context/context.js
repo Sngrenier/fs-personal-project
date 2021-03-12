@@ -12,7 +12,7 @@ class ProductProvider extends Component {
         products: [], 
         sortedProducts: [],
         category: 'all',
-        detailProduct: detailProduct,
+        detailProduct: [],
         cart: [],
         userInput: '',
         modalOpen: false,
@@ -52,6 +52,7 @@ class ProductProvider extends Component {
     getCart = () => {
         axios.get(`/api/cart`)
         .then((res) => {
+            console.log(res.data)
             this.setState({
                 cart:res.data
             })
@@ -63,39 +64,35 @@ class ProductProvider extends Component {
         return product
     }
 
-    handleChange = event => {
-        const target = event.target
-        const value= event.type ==='checkbox'? target.checked : target.value
-        const title = event.target.title
-        this.setState({
-            [title]: value
-        }, this.filterProducts)
-    }
 
-    filterProducts = () => {
-        let {products, category} = this.state
-        let tempProducts = [...products]
-        if(category !== 'all'){
-            tempProducts = tempProducts.filter(product => product.category === category)
-        }
-        this.setState({
-            sortedProducts: tempProducts
-        })
-    }
 
-    postSearch = () => {
-        axios.get(`/api/products/${this.state.userInput}`)
-        .then(res => {
-          console.log(res.data)
-          this.setState({
-            products: res.data,
-            userInput: ''
-          })
-          console.log(this.state.userInput)
-        }).catch(err => console.log(err))
-      }
+    /////////ATTEMPT AT FILTERING FUNCTIONALITY
+    // ON CLICK EVENT HANDLER FOR FILTER PRODUCTS
 
-    // filterProducts = this.state.products.filter( item => {
+    // handleChange = event => {
+    //     const target = event.target
+    //     const value= event.type ==='checkbox'? target.checked : target.value
+    //     const title = event.target.title
+    //     this.setState({
+    //         [title]: value
+    //     }, this.filterProducts)
+    // }
+    
+    
+    //  FUNCTION FOR FILTER PRODUCTS
+
+    // filterProducts = () => {
+    //     let {products, category} = this.state
+    //     let tempProducts = [...products]
+    //     if(category !== 'all'){
+    //         tempProducts = tempProducts.filter(product => product.category === category)
+    //     }
+    //     this.setState({
+    //         sortedProducts: tempProducts
+    //     })
+    // }
+
+     // filterProducts = this.state.products.filter( item => {
     //     return this.state.product.name.toLowerCase().includes( this.state.userInput.toLowerCase())
     // })
   
@@ -107,13 +104,31 @@ class ProductProvider extends Component {
     // } 
 
 
+    /////////ATTEMPT AT SEARCH BAR FUNCTIONALITY
+    
+    // postSearch = () => {
+    //     axios.get(`/api/products/${this.state.userInput}`)
+    //     .then(res => {
+    //       console.log(res.data)
+    //       this.setState({
+    //         products: res.data,
+    //         userInput: ''
+    //       })
+    //       console.log(this.state.userInput)
+    //     }).catch(err => console.log(err))
+    //   }
 
-    handleDetail = (id) =>{
-        //console.log('hello from detail')
-        const product = this.getItem(id)
-        this.setState(()=> {
-            return {detailProduct:product}
+    handleDetail = (item_id) =>{
+        console.log(item_id)
+        axios.post(`/api/detailProduct`, {item_id}).then((res) => {
+            this.setState({
+                detailProduct:res.data
+            })
         })
+        //     const product = this.getItem(id)
+        // this.setState(()=> {
+        //     return {detailProduct:product}
+        // })
     }
 
     addToCart = (item_id) => {
@@ -243,7 +258,7 @@ class ProductProvider extends Component {
     }
 
     clearCart = () => {
-        axios.post(`/api/clearCart`)
+        axios.delete(`/api/clearCart`)
         .then(res => {
         this.setState({
         cart: res.data

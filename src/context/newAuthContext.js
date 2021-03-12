@@ -28,7 +28,6 @@ export const AuthProvider = (props) => {
                 push('/')
         })
     }
-       
     
 
     return(

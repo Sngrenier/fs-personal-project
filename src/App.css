@@ -116,6 +116,7 @@ h3 {
     transform: translate(300px, 0);
     transition: 0.5s;
     transition-timing-function: ease-in-out;
+    z-index: 1;
   }
 
   .show {

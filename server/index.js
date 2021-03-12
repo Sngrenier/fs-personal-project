@@ -50,7 +50,8 @@ app.post(`/api/addToCart`, cartCtrl.addToCart)
 app.delete(`/api/deleteItem/:item_id`, cartCtrl.deleteItem)
 app.put(`/api/increment/:item_id`, cartCtrl.increment)
 app.put(`/api/decrement/:item_id`, cartCtrl.decrement) 
-app.post(`/api/clearCart`, cartCtrl.clearCart)
+app.delete(`/api/clearCart`, cartCtrl.clearCart)
+app.get(`/api/detailProduct`, cartCtrl.getDetailProduct)
 
 
 app.listen(SERVER_PORT, () => {

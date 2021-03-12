@@ -12,12 +12,14 @@ DROP TABLE shipping_address;
 DROP TABLE users;
 
 
+
 CREATE TABLE users (
 user_id SERIAL PRIMARY KEY,
 username VARCHAR(50) NOT NULL,
 email VARCHAR(50),
 password VARCHAR(2500) NOT NULL,
-user_name VARCHAR(150),
+first_name VARCHAR(50),
+last_name VARCHAR(50),
 profile_pic VARCHAR,
 phone_number INTEGER
 );
@@ -62,7 +64,7 @@ info VARCHAR(2500) NOT NULL
 CREATE TABLE cart (
  cart_id SERIAL PRIMARY KEY,
  user_id INT REFERENCES users(user_id),
- active BOOLEAN default true
+--  active BOOLEAN default true
 );
 
 CREATE TABLE cart_items(

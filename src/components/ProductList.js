@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Product from './Product'
 import Title from './Title'
 import {ProductConsumer} from '../context/context'
-// import ProductFilter from './ProductFilter'
+
 
 
 export default class ProductList extends Component {
@@ -30,17 +30,3 @@ export default class ProductList extends Component {
         )
     }
 }
-// import React from 'react'
-// import Product from './Product'
-
-// export default function ProductList({products}) {
-//     return <section className="py-5">
-//         <div className="container">
-//             {
-//                 products.map(item => {
-//                     return <Product key={item.id} product={item} />
-//                 })
-//             }
-//         </div>
-//     </section>
-// }
