@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import {ButtonContainer} from '../NavButton'
 import {useContext} from 'react'
 import {AuthContext} from '../../context/newAuthContext'
+import axios from 'axios'
 
 // import {Redirect} from 'react-router-dom'
 // import {useState} from 'react'
@@ -23,7 +24,11 @@ const Profile =()=> {
                         <div className="col-1">
                             <input 
                             className="input-btn"
-                            placeholder = {`Your name`}
+                            placeholder = {`first name`}
+                            />
+                            <input 
+                            className="input-btn"
+                            placeholder = {`last name`}
                             />
                             <input 
                             className="input-btn"
@@ -33,10 +38,6 @@ const Profile =()=> {
                             className="input-btn"
                             placeholder = {`phone number`}
                             />
-                            <input 
-                            className="input-btn"
-                            placeholder = {`street address`}
-                            />
                             </div>
                             <div className="col-2">
                             <img className= "prof-img" alt="prof-img" src="https://media.restorationhardware.com/is/image/rhis/Ski_LP_M2_Hero?wid=1125&fmt=jpeg&qlt=85" width={500}></img>
@@ -44,7 +45,7 @@ const Profile =()=> {
                             </div>
                             <div className="update-profile">
                             <Link to="/">
-                                    <ButtonContainer>
+                                    <ButtonContainer onClick={()=>axios.post(`/api/auth/register`).then()}>
                                         save changes
                                     </ButtonContainer>
                                 </Link>

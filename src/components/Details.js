@@ -3,13 +3,14 @@ import {ProductConsumer} from '../context/context'
 import {Link} from 'react-router-dom'
 import {ButtonContainer} from './NavButton'
 
-export default class Details extends Component {
+class Details extends Component {
     render() {
 
         return (
             <ProductConsumer>
                 {(value) => {
-                const{id, company, img, info, price, title, inCart} = value.detailProduct
+                    console.log(value)
+                const{item_id, company, img, info, price, title, inCart} = value.detailProduct
                 return(
                     <div className="container py-5">
                         <div className="row">
@@ -42,8 +43,8 @@ export default class Details extends Component {
                                 cart
                                 // disabled={inCart?true:false}
                                 onClick={()=> {
-                                    value.addToCart(id)
-                                    value.openModal(id)
+                                    value.addToCart(item_id)
+                                    value.openModal(item_id)
                                 }}
                                 >
                                     {inCart ? 'inCart' : 'add to cart'}
@@ -60,3 +61,4 @@ export default class Details extends Component {
         )
     }
 }
+export default Details

@@ -119,12 +119,15 @@ class ProductProvider extends Component {
     //   }
 
     handleDetail = (item_id) =>{
-        console.log(item_id)
-        axios.post(`/api/detailProduct`, {item_id}).then((res) => {
+        axios.get(`/api/detailProduct/${item_id}`).then((res) => {
+            console.log(res.data)
             this.setState({
                 detailProduct:res.data
             })
         })
+        // this.setState({
+        //     detailProduct: this.state.products[this.state.products.findIndex((p) => p.item_id === item_id)]
+        // })
         //     const product = this.getItem(id)
         // this.setState(()=> {
         //     return {detailProduct:product}

@@ -9,11 +9,12 @@ export default class Header extends Component {
     showArrows: false,
     arrowsBlock: false,
     enableAutoPlay: true,
-    AutoPlaySpeed: 200,
-    duration: 200,
+    infiniteLoop: true,
+    AutoPlaySpeed: 600,
+    duration: 900,
     pauseOnHover: false,
     enableMouseSwipe: true,
-    pagination: false
+    pagination: false,
     }
 
     return (

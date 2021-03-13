@@ -25,7 +25,7 @@
   margin-top: 2%;
 }
 
-@media screen and (min-width: 200px) and (max-width: 890px) {
+@media screen and (min-width: 200px) and (max-width: 1024px) {
   .first-set {
     display: flex;
     flex-direction: column;
@@ -35,6 +35,24 @@
     align-content: center;
     padding: 5%;
     /* margin-left: 25%; */
+  }
+
+  .l-img1 {
+    width: 100vw;
+    margin-left: 5%;
+  }
+
+  .landing-img-text-1 {
+    text-align: center;
+    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .landing-img-text-2 {
+    text-align: center;
+    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -63,7 +81,7 @@
   margin-bottom: 5%;
 }
 
-@media screen and (min-width: 200px) and (max-width: 900px) {
+@media screen and (min-width: 200px) and (max-width: 1024px) {
   .l-img2 {
     display: none;
   }

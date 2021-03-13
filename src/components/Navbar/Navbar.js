@@ -1,12 +1,16 @@
-import React, { Component } from 'react'
+import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css'
+import axios from 'axios'
+// import {AuthContext} from '../../context/newAuthContext'
 // import styled from 'styled-components'
 
 
 
 
-export default class Navbar extends Component {
+function Navbar() {
+
+    // const {user} = useContext(AuthContext)
  // filterProducts = this.state.products.filter( item => {
     //     return this.state.product.name.toLowerCase().includes( this.state.userInput.toLowerCase())
     // })
@@ -28,9 +32,8 @@ export default class Navbar extends Component {
     // }
 
     
-    render() {
         // const{username, email, profile_pic, first_name, last_name, phone_number} = user
-
+    // console.log('Navbar', user)
         return(
             <section className="navbar">
             <div className="navbar-expand-sm px-sm-5">
@@ -74,14 +77,13 @@ export default class Navbar extends Component {
                 <div className="nav-item greeting">
                 <li className="nav-item ml-5">
                     <p className="nav-hello">Welcome!</p>
-                    {/* <p className="nav-hello">`Welcome! ${username}`</p> */}
                     <Link to="/auth" className="ml-auto">
                     <button className="nav-login">LOGIN OR REGISTER</button>
                     </Link>
                     </li>
                     <li>    
                     <Link to="/">
-                    <button className="nav-login">LOGOUT</button>
+                    <button className="nav-login" onClick={()=>axios.post(`/api/auth/logout`).then()}>LOGOUT</button>
                     </Link>
                 </li>
                 </div>
@@ -100,21 +102,9 @@ export default class Navbar extends Component {
             </section>
         )
     }
-}
+    export default Navbar
 
-// const NavWrapper = styled.nav`
-// height: 100px;
-// background: #737374;
-// .nav-link{
-//     color:var(--mainWhite) !important;
-//     font-size: 1rem;
-//     text-transform: capitalize;
-// }
-// .mr-2 {
-//     color: var(--mainWhite)!important;
-// }
-// .nav-cart-btn {
-//     color: var(--mainWhite) !important;
-// }
-// `
+
+
+
 

@@ -20,7 +20,7 @@ a {
   letter-spacing: 2.2px;
   font-weight: 500;
   color: #888787;
-  text-decoration: none;
+  text-decoration: none !important;
   /* margin-bottom: 40px; */
 }
 
@@ -46,12 +46,12 @@ h3 {
   width: 100vw;
   background: #c3ced1;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   text-align: center;
   line-height: 1rem;
   padding-top: 1%;
-  margin-left: -1%;
 }
 
 .promo {
@@ -61,6 +61,11 @@ h3 {
 }
 
 /* PRODUCT CATEGORY HEADER */
+
+.nav-login {
+  color: #888787;
+  text-decoration: none;
+}
 .category-names {
   font-family: "Montserrat", sans-serif;
   padding-right: 40px;
@@ -70,14 +75,50 @@ h3 {
   font-weight: 500;
   color: #888787;
   text-decoration: none !important;
-  /* margin-bottom: 40px; */
+  background-color: transparent;
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  /* margin-top: 0.3%;
+  margin-bottom: 2%; */
+  text-align: center;
 }
 
-.product-header {
-  margin-top: 0.3%;
-  margin-bottom: 2%;
+.reg-buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   background: transparent;
-  text-align: center;
+  margin-top: 2.1%;
+}
+
+#coll-btn {
+  margin-top: 0.5%;
+}
+
+#reg-btn1 {
+  padding: 0 !important;
+  background: transparent;
+  margin-bottom: 8%;
+}
+
+#reg-btn2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent;
+}
+
+.nav-bar {
+  width: 100vw;
+  background: transparent;
 }
 
 /* .navbar-toggle {
@@ -138,33 +179,9 @@ h3 {
 
   #prod-btn {
     display: inline-block;
+    z-index: 2;
   }
 }
-
-/* @media screen and (max-width: 768px) {
-  .product-header {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-  }
-  .navbar-toggle {
-    display: active;
-  } */
-/* .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
-  } */
-/* .category-names li {
-    margin: 0;
-  }
-  .category-link {
-    margin-left: 40px;
-  }
-} */
 
 /*BASIC TYPE + BUTTONS TO BE UPDATED ONCE APP IS COMPLETE */
 .text-title {

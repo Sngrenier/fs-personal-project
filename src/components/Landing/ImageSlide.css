@@ -7,6 +7,8 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  display: contain;
+  overflow: hidden;
   background-color: transparent;
   border-color: transparent;
   color: #fff;
@@ -14,12 +16,32 @@
   font-size: 1rem;
 }
 
-.img-slider {
+@media screen and (min-width: 250px) and (max-width: 1024px) {
+  .image-slider {
+    width: 100vw;
+    height: 40vh;
+    display: contain;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-slider {
+    width: 120vw !important;
+    height: 40vh;
+    background-size: cover;
+    display: contain;
+    overflow: hidden;
+    margin-left: -5%;
+  }
+}
+
+/* .img-slider {
   height: 100vh;
   width: 100vw;
   display: contain;
   overflow: hidden;
-}
+} */
 
 .carousel-link {
   font-family: "Quattrocento Sans", sans-serif;
@@ -45,5 +67,8 @@
 
 .carousel {
   width: 105vw;
-  margin-left: -5.5%;
+  margin-left: -4%;
+  background-size: cover;
+  display: contain;
+  overflow: hidden;
 }
