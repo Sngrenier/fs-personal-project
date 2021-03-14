@@ -1,7 +1,8 @@
 require('dotenv').config();
 const express = require('express'),
     userCtrl = require('./controllers/user'),
-    cartCtrl = require('./controllers/cart')
+    cartCtrl = require('./controllers/cart'),
+    nodemailerCtrl = require('./controllers/nodemailer'),
     massive = require('massive'),
     session = require('express-session')
     //path = require('path')
@@ -33,10 +34,11 @@ massive({
 
 
 //Auth Endpoints
-app.post('/api/auth/register', userCtrl.register);
-app.post('/api/auth/login', userCtrl.login);
-app.get('/api/auth/me', userCtrl.getUser);
-app.post('/api/auth/logout', userCtrl.logout);
+app.post('/api/auth/register', userCtrl.register)
+app.post('/api/auth/login', userCtrl.login)
+app.get('/api/auth/me', userCtrl.getUser)
+app.post('/api/auth/logout', userCtrl.logout)
+app.post(`/api/welcomeEmail`, nodemailerCtrl.sendEmail)
 
 //Search Endpoints
 // app.get(`/api/storeProducts`, ctrl.getProducts)
@@ -52,6 +54,7 @@ app.put(`/api/increment/:item_id`, cartCtrl.increment)
 app.put(`/api/decrement/:item_id`, cartCtrl.decrement) 
 app.delete(`/api/clearCart`, cartCtrl.clearCart)
 app.get(`/api/detailProduct/:item_id`, cartCtrl.getDetailProduct)
+
 
 
 app.listen(SERVER_PORT, () => {

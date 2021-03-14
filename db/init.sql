@@ -20,7 +20,6 @@ email VARCHAR(50),
 password VARCHAR(2500) NOT NULL,
 first_name VARCHAR(50),
 last_name VARCHAR(50),
-profile_pic VARCHAR,
 phone_number INTEGER
 );
 

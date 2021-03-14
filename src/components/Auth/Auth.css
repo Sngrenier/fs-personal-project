@@ -1,11 +1,12 @@
 /* h1 {
   text-align: center;
 } */
-
+/* https://i.pinimg.com/originals/a5/c4/e4/a5c4e49e21d7e07bb922d92660b173cf.jpg */
+/* https://s30965.pcdn.co/blogs/the-study/wp-content/uploads/shintaffer_bjornhem_12-950x713.jpg */
 .auth {
   width: 100vw;
   height: 100vh;
-  background-image: url("https://media.restorationhardware.com/is/image/rhis/2019_SH_BB_2?wid=1000&fmt=jpeg");
+  background-image: url("https://s30965.pcdn.co/blogs/the-study/wp-content/uploads/shintaffer_bjornhem_12-950x713.jpg ");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -67,6 +68,7 @@
   .auth-title {
     font-size: 3rem;
     display: flex;
+    padding-top: 10%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -100,9 +102,10 @@ input {
   justify-content: center;
   align-items: center;
   width: 60%;
+  margin-bottom: -10%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1080px) {
+@media screen and (min-width: 250px) and (max-width: 1080px) {
   .auth-input-box {
     width: 50vw;
     height: 55vh;
@@ -111,8 +114,11 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
     position: relative;
+  }
+  .auth-button-container {
+    padding-bottom: 25%;
+    padding-top: 5%;
   }
 }
 
@@ -128,10 +134,27 @@ input {
 }
 
 .auth-button-container {
-  display: flex;
-  justify-content: space-between;
-  width: 55%;
+  margin-left: 5%;
 }
-.dark-button {
-  margin: 5%;
+@media screen and (min-width: 250px) and (max-width: 700px) {
+  .auth-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  #new-auth-log-btn {
+    margin-bottom: 0;
+  }
+  #new-auth-reg-btn {
+    margin-top: -25%;
+  }
+  .auth-title {
+    font-size: 1.5rem;
+    padding-top: 30%;
+    font-weight: 700;
+    color: #203c45;
+    opacity: 1;
+  }
 }

@@ -2,6 +2,7 @@ import {Component} from 'react'
 import React from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+// import {AuthContext} from '../context/newAuthContext'
 
 class ProdHead extends Component {
     constructor() {
@@ -38,22 +39,7 @@ toggleShowFunc = () => {
                 <span 
                 className="nav-login">FULL COLLECTION</span>
             </Link>
-            {/* <Link className="category-link" to='/productList'>
-                <span>TABLES</span>
-            </Link>
-            <Link className="category-link" to='/productList'>
-                <span>SIDE CHAIRS</span>
-            </Link>
-            <Link className="category-link" to='/productList'>
-                <span>THROWS</span>
-            </Link>
-            <Link className="category-link" to='/productList'>
-                <span>PILLOWS</span>
-            </Link>
-            <Link className="category-link" to='/productList'>
-                <span>FINISHINGS</span>
-            </Link>  */}
-             <Link className="category-link" to="/profile" >
+            <Link className="category-link" to="/profile" >
                 <img src="https://img.icons8.com/dotty/38/000000/test-account.png" 
                 alt='profile' 
                 />

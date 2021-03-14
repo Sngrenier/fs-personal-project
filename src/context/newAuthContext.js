@@ -7,18 +7,19 @@ export const AuthProvider = (props) => {
     const [user, setUser] = useState(null)
     const {push}=useHistory()
 
-    const register = (username, password, setErrorMsg) => {
-        const profile_pic = `https://robohash.org/${username}.png`
-        axios.post('/api/auth/register', {username, password, profile_pic}).then(res => {
+    const register = (username, password, email, first_name, last_name, phone_number, setErrorMsg) => {
+        axios.post('/api/auth/register', {username, password, email, first_name, last_name, phone_number})
+        .then(res => {
             setUser(res.data)
-            push('/profile')
+            push('/')
         }).catch(error => setErrorMsg('Username Taken!'))
     }
 
     const login = (username, password, setErrorMsg) => {
-        axios.post('/api/auth/login', {username, password}).then(res => {
+        axios.post('/api/auth/login', {username, password})
+        .then(res => {
             setUser(res.data)
-            push('/profile')
+            push('/')
         }).catch(error => setErrorMsg('Please register to log in.'))
     }
     

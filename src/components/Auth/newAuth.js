@@ -1,12 +1,14 @@
 import {useState, useContext} from 'react'
 import {Link} from 'react-router-dom'
 import './Auth.css'
+import {ButtonContainer} from '../NavButton'
 import {AuthContext} from '../../context/newAuthContext'
 
 const Auth = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [errorMsg, setErrorMsg] = useState('')
+
 
     const values = useContext(AuthContext)
 
@@ -22,7 +24,7 @@ const Auth = () => {
             <ul>
               <div>
               <Link to='/'>
-                <img src="https://img.icons8.com/small/32/000000/home.png" alt='store' className="nav-brand" />
+                <img src="https://img.icons8.com/small/32/000000/home.png" alt='home' className="nav-brand" />
                 </Link>
               </div>
             </ul>
@@ -31,9 +33,6 @@ const Auth = () => {
         </div>
       <div className='auth'>
         <div className='auth-container'>
-          {/* <div className='auth-img'>
-          <img src={logo} alt='logo' />
-          </div> */}
           <h3 className='auth-title'>Welcome!</h3>
           {errorMsg && <h3 className='auth-error-msg'>{errorMsg} <span onClick={closeErrorMessage}>X</span></h3>}
           <div className='auth-input-box'>
@@ -45,8 +44,20 @@ const Auth = () => {
             <input value={password} type='password' onChange={e => setPassword(e.target.value)} />
           </div>
           <div className='auth-button-container'>
-            <button className='dark-button' onClick={()=> values.login(username, password, setErrorMsg)}> Login </button>
-            <button className='dark-button' onClick={()=> values.register(username, password, setErrorMsg)}> Register </button>
+          <ButtonContainer 
+          className='dark-button' 
+          id="new-auth-log-btn"
+          onClick={()=> values.login(username, password, setErrorMsg)}
+          >Login 
+          </ButtonContainer>
+            <Link to='/profile'>
+              <ButtonContainer
+            className='dark-button'
+            id="new-auth-reg-btn"
+            // onClick={()=> values.register(username, password, setErrorMsg)}
+             >Register 
+            </ButtonContainer>
+            </Link>
           </div>
         </div>
       </div>

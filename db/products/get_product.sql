@@ -1,2 +1,3 @@
-SELECT * FROM items
+SELECT * 
+FROM items
 WHERE item_id = $1;

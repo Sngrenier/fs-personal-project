@@ -13,7 +13,10 @@ class Cart extends Component {
         let values= this.context
         values.getCart()
     }
+
+
     render() {
+
 
         return (
             <section>
