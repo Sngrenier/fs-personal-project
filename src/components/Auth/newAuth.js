@@ -54,7 +54,6 @@ const Auth = () => {
               <ButtonContainer
             className='dark-button'
             id="new-auth-reg-btn"
-            // onClick={()=> values.register(username, password, setErrorMsg)}
              >Register 
             </ButtonContainer>
             </Link>

@@ -36,6 +36,25 @@
   }
 }
 
+.carousel-caption {
+  position: absolute;
+  margin-bottom: 4%;
+  text-align: right;
+  color: var(--mainWhite);
+}
+
+.cc-1 {
+  color: var(--mainWhite);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.cc-2 {
+  color: var(--mainWhite);
+  font-weight: 500;
+  line-height: 6rem;;
+}
+
 /* .img-slider {
   height: 100vh;
   width: 100vw;
@@ -50,12 +69,6 @@
   text-decoration: none;
 }
 
-.carousel-caption {
-  position: absolute;
-  margin-bottom: 20%;
-  text-align: right;
-  color: var(--mainWhite);
-}
 /* .rec.rec-pagination {
   color: transparent;
   border-color: lightblue;
@@ -72,3 +85,5 @@
   display: contain;
   overflow: hidden;
 }
+
+

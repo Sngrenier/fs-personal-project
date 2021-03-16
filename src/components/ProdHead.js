@@ -39,11 +39,14 @@ toggleShowFunc = () => {
                 <span 
                 className="nav-login">FULL COLLECTION</span>
             </Link>
-            <Link className="category-link" to="/profile" >
+            <Link className="category-link">
+                    <h3 className="brand-name">MARBLE OAK</h3>
+                </Link>
+            {/* <Link className="category-link" to="/profile" >
                 <img src="https://img.icons8.com/dotty/38/000000/test-account.png" 
                 alt='profile' 
                 />
-            </Link>
+            </Link> */}
             <div className="reg-buttons" >
             <Link className="category-link" to="/auth" id="reg-btn1">
                 <a className="nav-login">LOGIN OR REGISTER</a>

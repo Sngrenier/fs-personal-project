@@ -3,7 +3,6 @@ import {AuthContext} from '../context/newAuthContext'
 
 export default function Title({name, title}) {
     const values=useContext(AuthContext)
-    console.log(values)
     return (
         <div className="row">
             <div className="col-10 mx-auto my-2 text-center text-title">

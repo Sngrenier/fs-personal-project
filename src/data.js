@@ -259,161 +259,162 @@
 //     count: 0,
 //     total: 0
 //   }
-  // {
-  //   id: 21,
-  //   title: "Trilliane 10 - Light Unique / Statement Geometric Chandelier",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/64370485/resize-h1600-w1600%5Ecompr-r85/9727/97279552/Trilliane+10+-+Light+Unique+/+Statement+Geometric+Chandelier.jpg",
-  //   price: 10845,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "Lighting that Lives Forever Rooted in this American craftsmanship tradition since 1870, Schonbek makes timeless lighting with an impact that lasts. The ethereal luminosity of lush crystal strands brings a whimsical element to the iconic Trilliane chandelier. The garlands mingle with glimmering inverted pendeloques, created using a historically revolutionary technique that evokes the rawness of mineral crystal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 22,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://media.restorationhardware.com/is/image/rhis/CO17MOS_F247_p298x299_V1?$l-pd1$&wid=650",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 23,
-  //   title: "Tropical Zest by Emma Brooks - Wrapped Canvas Painting Print",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/35477782/resize-h800-w800%5Ecompr-r85/7090/70900878/Tropical+Zest+by+Emma+Brooks+-+Wrapped+Canvas+Painting+Print.jpg",
-  //   price: 945,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "Emma Brooks was born in Brooklyn, New York to a liberal family that encouraged her artistic abilities from a young age. Growing up in busy city life, Emma became inspired by the various cultures and lifestyles she encountered in the city. With a broad interest in design and modern art, Emma was accepted to the Rhode Island School of Design in Providence, Rhode Island. In her studies in Providence, she was able to admire a slower lifestyle than the hustle and bustle of life in New York. Brooks drew inspiration from her professors and the long time interest she retained for aesthetics and unique beauty. Emma currently resides in downtown Los Angeles with her dog, Jackson. She enjoys the creative an expression that Los Angeles has to offer, and is always seeking new artistic awakenings to portray in her artwork.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 24,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 25,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 26,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 27,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 28,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 29,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 30,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 31,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // },
-  // {
-  //   id: 32,
-  //   title: "Curated Berkeley Chesterfield Leather Sofa",
-  //   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
-  //   price: 4040,
-  //   company: "PERIGOLD",
-  //   info:
-  //     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
-  //   inCart: false,
-  //   count: 0,
-  //   total: 0
-  // }
+// {
+//   id: 21,
+//   title: "Trilliane 10 - Light Unique / Statement Geometric Chandelier",
+//   img: "https://secure.img1-fg.wfcdn.com/im/64370485/resize-h1600-w1600%5Ecompr-r85/9727/97279552/Trilliane+10+-+Light+Unique+/+Statement+Geometric+Chandelier.jpg",
+//   price: 10845,
+//   company: "PERIGOLD",
+//   info:
+//     "Lighting that Lives Forever Rooted in this American craftsmanship tradition since 1870, Schonbek makes timeless lighting with an impact that lasts. The ethereal luminosity of lush crystal strands brings a whimsical element to the iconic Trilliane chandelier. The garlands mingle with glimmering inverted pendeloques, created using a historically revolutionary technique that evokes the rawness of mineral crystal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 22,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://media.restorationhardware.com/is/image/rhis/CO17MOS_F247_p298x299_V1?$l-pd1$&wid=650",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 23,
+//   title: "Tropical Zest by Emma Brooks - Wrapped Canvas Painting Print",
+//   img: "https://secure.img1-fg.wfcdn.com/im/35477782/resize-h800-w800%5Ecompr-r85/7090/70900878/Tropical+Zest+by+Emma+Brooks+-+Wrapped+Canvas+Painting+Print.jpg",
+//   price: 945,
+//   company: "PERIGOLD",
+//   info:
+//     "Emma Brooks was born in Brooklyn, New York to a liberal family that encouraged her artistic abilities from a young age. Growing up in busy city life, Emma became inspired by the various cultures and lifestyles she encountered in the city. With a broad interest in design and modern art, Emma was accepted to the Rhode Island School of Design in Providence, Rhode Island. In her studies in Providence, she was able to admire a slower lifestyle than the hustle and bustle of life in New York. Brooks drew inspiration from her professors and the long time interest she retained for aesthetics and unique beauty. Emma currently resides in downtown Los Angeles with her dog, Jackson. She enjoys the creative an expression that Los Angeles has to offer, and is always seeking new artistic awakenings to portray in her artwork.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 24,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 25,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 26,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 27,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 28,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 29,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 30,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 31,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// },
+// {
+//   id: 32,
+//   title: "Curated Berkeley Chesterfield Leather Sofa",
+//   img: "https://secure.img1-fg.wfcdn.com/im/28525335/resize-h700-w700%5Ecompr-r85/3719/37195681/Curated+Berkeley+Chesterfield+Leather+Sofa.jpg",
+//   price: 4040,
+//   company: "PERIGOLD",
+//   info:
+//     "This classic chesterfield sofa is upholstered in leather for an inviting look and feel that is at home in traditional aesthetics. It's built on a solid and engineered wood frame and features classically rolled tuxedo arms and turned legs. The couch and seat cushions are filled with foam, down feathers, and fibers with an integrated spring seat construction for just the right amount of support that bounces back. Plus, you can remove the cushions to help make cleaning a little easier. Button tufting along the back and arms give this sofa a hint of textural appeal.",
+//   inCart: false,
+//   count: 0,
+//   total: 0
+// }
 // ];
 
 // export const detailProduct = {
 //   id: 1,
 //   title: "Teddy gilet in alpaca",
-//   img:  "https://b2c-media.maxmara.com/sys-master/m0/MM/2021/1/1271011106/007/s3master/1271011106007-a-gettata_normal.jpg#product",
+//   img:
+//     "https://b2c-media.maxmara.com/sys-master/m0/MM/2021/1/1271011106/007/s3master/1271011106007-a-gettata_normal.jpg#product",
 //   price: 2890,
 //   company: "MAXMARA",
 //   info:
 //     "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
 //   inCart: false,
 //   count: 0,
-//   total: 0
+//   total: 0,
 // };
