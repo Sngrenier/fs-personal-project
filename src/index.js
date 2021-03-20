@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 import './reset.css'
 import './index.css'
 import App from './App'
-import {BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter as Router} from 'react-router-dom'
+// const Router =
+//   process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter
 import {ProductProvider} from './context/context'
 import {AuthProvider} from './context/newAuthContext'
 import reportWebVitals from './reportWebVitals'

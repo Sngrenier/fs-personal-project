@@ -4,7 +4,7 @@ const express = require("express"),
   cartCtrl = require("./controllers/cart"),
   massive = require("massive"),
   session = require("express-session");
-
+  const path = require('path')
 
 const app = express();
 
@@ -53,24 +53,21 @@ app.put(`/api/decrement/:item_id`, cartCtrl.decrement);
 app.delete(`/api/clearCart`, cartCtrl.clearCart);
 app.get(`/api/detailProduct/:item_id`, cartCtrl.getDetailProduct);
 
+
+
+
+app.use( express.static( `${__dirname}/../build`));
+
+app.get('*', (req,res)=> {
+res.sendFile(path.join(__dirname, '../build/index.html'))
+})
+
+
+
 app.listen(SERVER_PORT, () => {
   console.log(`Server running on port ${SERVER_PORT}`);
 });
 
-// HOSTING:
-// Add this to the end of server index:
-//  app.use(express.static(__dirname + '../build/index.html'))
-
-//  app.get('*', (req, res)=> {
-//    res.sendFile(path.join(__dirname, '../build/index.html'))
-//  })
-
-// Just in case there are typos above, this is copied from instructor
-// app.use( express.static( `${__dirname}/../build`));
-
-// app.get('*', (req,res)=> {
-// res.sendFile(path.join(__dirname, '../build/index.html'))
-// })
 
 // then run npm run build in terminal (make sure you're in root)
 // then yoyu don't need npm start to run this, you only need nodemon
